@@ -1,4 +1,13 @@
 function stringChop(str, size) {
+
+	if(!str)return[];
+	
+	let chunk =[];
+	for(let i=0;i<str.length;i+=size){
+	    chunk.push(str.slice(i,i+size))
+	}
+	return chunk;
+  // your code here
   // your code here
 }
 
